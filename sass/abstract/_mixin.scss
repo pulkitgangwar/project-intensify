@@ -1,0 +1,48 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// MEDIA QUERY MANAGER
+
+// 0 - 600px                  phone
+// 600px - 900px              tablet potrait
+// 900px - 1200px             tablet-landscape
+// 1200px - 1800px            our styles apply
+// 1800px +                   big-desktop
+
+// $breakpoints
+
+// -phone
+// -tab-port
+// -tab-land
+// big-desktop
+
+@mixin respond($breakpoints) {
+  @if $breakpoints==phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints==tab-port {
+    @media (max-width: 56.2em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints==tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoints==big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.card {
+  height: 35rem;
+
+  @include respond(phone) {
+    height: 45rem;
+  }
+  &__image {
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+  }
+}

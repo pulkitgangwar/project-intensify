@@ -1,0 +1,35 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 2rem 5rem;
+    border: 1px solid $button-color-2;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: $button-color;
+
+    &:hover {
+      background-color: rgba($color-black, 0.04);
+    }
+  }
+
+  &--orange {
+    background-color: $color-primary-orange;
+    color: $color-white;
+
+    &:hover {
+      background-color: rgba($color-primary-orange, 0.7);
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.footer {
+  position: relative;
+  background-color: $color-blue-light;
+  width: 100%;
+  height: 40vh;
+  padding: 8rem 0;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__items {
+    display: inline-block;
+    color: $text-color-2;
+    text-transform: capitalize;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &--1 {
+      &::before {
+        content: "\f095";
+        font-family: "Font Awesome 5 Free";
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+        font-weight: 900;
+        //   position: absolute;
+        //   left: -4rem;
+        color: $color-primary-orange;
+      }
+    }
+
+    &--2 {
+      &::before {
+        content: "\f0e0";
+        font-family: "Font Awesome 5 Free";
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+        font-weight: 900;
+        //   position: absolute;
+        //   left: -4rem;
+        color: $color-primary-orange;
+      }
+    }
+
+    &--3 {
+      &::before {
+        content: "\f3c5";
+        font-family: "Font Awesome 5 Free";
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+        font-weight: 900;
+        //   position: absolute;
+        //   left: -4rem;
+        color: $color-primary-orange;
+      }
+    }
+  }
+
+  &__link {
+    color: $text-color-2;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  &__info {
+    color: $text-color-2;
+    font-family: "Pacifico", cursive;
+
+    &::before {
+      content: "";
+      width: 600px;
+      text-align: center;
+      height: 0.1rem;
+      background-color: $text-color-1;
+      display: block;
+      margin-bottom: 2rem;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+}

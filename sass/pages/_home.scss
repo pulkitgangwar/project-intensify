@@ -1,0 +1,36 @@
+.section-main {
+  position: relative;
+  background-image: url("/Images/banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+
+.section-2 {
+  padding: 15rem 0 6rem;
+  width: 100%;
+  height: 65vh;
+
+  @include respond(phone) {
+    height: 100vh;
+    margin: 10rem 0 25rem;
+  }
+  &__image {
+    border-radius: 100%;
+    width: 100%;
+  }
+}
+
+.section-3 {
+  background-color: $color-primary-orange;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  padding: 5rem 0;
+}
+
+.section-about {
+  padding: 20rem 0;
+}

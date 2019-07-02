@@ -1,0 +1,17 @@
+.header {
+  background-color: $color-white;
+  height: 7.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.5);
+  z-index: 1;
+
+  &__main-logo {
+    font-size: 4rem;
+    font-family: "Pacifico", cursive;
+    text-decoration: none;
+    color: $color-primary-orange;
+    // padding: 5rem;
+  }
+}
